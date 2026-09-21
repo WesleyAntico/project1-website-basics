@@ -52,12 +52,13 @@ p {
 
 a {
   color: #FFFFFF;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 0.15em;
 }
 
 a:hover {
   color: #738DB5;
+  text-decoration: none;
 }
 
 a:focus-visible {
@@ -66,9 +67,9 @@ a:focus-visible {
 }
 
 header, main, footer {
-  max-width: 53.333rem;
+  max-width: 48rem;
   margin-inline: auto;
-  padding: 2rem;
+  padding: 4rem;
 }
 
 button, .button {
@@ -85,3 +86,38 @@ button:hover, .button:hover {
   background-color: #333333;
   padding: 2rem;
 }
+
+/* -------------  Header styles ------------------------- */
+header {
+  display: flex;
+  justify-content: space-between; /* site title left, nav right */
+  align-items: baseline;           /* vertical centering */
+  padding: 1.5rem;
+}
+
+/* Styles the site title at the top of the header */
+.site-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;   /* remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;      /* horizontal layout for links */
+  gap: 1rem;          /* space between items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #A8A8A8;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: 
+#738DB5; /* hover color */
+}
+
+/* ------------- END Header styles  */
